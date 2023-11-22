@@ -1,27 +1,63 @@
-# FedexTest
+# Fedex Web Coding Challenge
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.2.
+This repository contains a simple Angular app that follows the requirements:
 
-## Development server
+• Build a single page app with a sign-up form.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+• The form should allow users to enter first name, last name, email, and password.
 
-## Code scaffolding
+• All fields are required.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+• Password validation:
 
-## Build
+1. Should be a minimum of eight characters,
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+2. Should contain lower and uppercase letters,
+
+3. Should not contain user’s first or last name.
+
+• Email should be validated but there are various ways of accomplishing this. So, show us what
+you consider as a proper email validation.
+
+• The form should send a POST request to https://demo-api.now.sh/users. The request body
+example:
+`{
+firstName: "Thomas",
+lastName: "Shelby",
+email: "thomas@shelby.co.uk"
+}`
+
+
+## Prerequisites
+
+Before you begin, make sure you have the following tools installed on your machine:
+
+Node.js: [Download and install Node.js](https://nodejs.org/en/)
+
+When it's installed you should install Angular CLI as well (`npm install -g @angular/cli
+`)
+
+## Getting Started
+1. Clone the repository to your local machine.
+2. Install project dependencies using `npm install`
+
+## Running the Project
+
+Once you have installed the dependencies and the Angular CLI globally, you can run the project using the following steps:
+1. Start the development server `ng serve`
+2. Open your web browser and navigate to http://localhost:4200/. The app will automatically reload if you make any changes to the source files.
 
 ## Running unit tests
+App is covered with Unit Tests.
 
 Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
+## Build for Production
+To build the project for production, use the following command: `ng build --prod
+`
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## Additional Information
 
-## Further help
+This project was generated with [Angular CLI](https://angular.io/cli). Refer to the Angular CLI documentation for more commands and customization options.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Explore the src/ directory to find the source code of the application.
