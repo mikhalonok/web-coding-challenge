@@ -1,4 +1,4 @@
-# Fedex Web Coding Challenge
+# Web Coding Challenge
 
 This repository contains a simple Angular app that follows the requirements:
 
